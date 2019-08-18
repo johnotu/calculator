@@ -11,33 +11,39 @@
   <div class="calc-container">
   <table>
     <tr>
-      <th colspan="4">Screen</th>
+      <th colspan="4" id="disp" class="display"></th>
+    </tr>
+    <tr class="space"></tr>
+    <tr>
+      <td id="clear" onclick="clear(this.id)">C</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>/</td>
+      <td id="1" onclick="prepInput(this.id)">1</td>
+      <td id="2" onclick="prepInput(this.id)">2</td>
+      <td id="3" onclick="prepInput(this.id)">3</td>
+      <td id="/" onclick="prepInput(this.id)">/</td>
     </tr>
     <tr>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>*</td>
+      <td id="4" onclick="prepInput(this.id)">4</td>
+      <td id="5" onclick="prepInput(this.id)">5</td>
+      <td id="6" onclick="prepInput(this.id)">6</td>
+      <td id="*" onclick="prepInput(this.id)">*</td>
     </tr>
     <tr>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td>+</td>
+      <td id="7" onclick="prepInput(this.id)">7</td>
+      <td id="8" onclick="prepInput(this.id)">8</td>
+      <td id="9" onclick="prepInput(this.id)">9</td>
+      <td id="-" onclick="prepInput(this.id)">-</td>
     </tr>
     <tr>
-      <td>C</td>
-      <td>0</td>
-      <td>.</td>
-      <td>=</td>
+      <td id="deci" onclick="prepInput(this.id)">.</td>
+      <td id="0" onclick="prepInput(this.id)">0</td>
+      <td id="compute" onclick="compute()">=</td>
+      <td id="+" onclick="prepInput(this.id)">+</td>
     </tr>
   </table>
   </div>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
