@@ -1,6 +1,6 @@
 'use strict';
 
-let calcInputs = [];
+let calcInputs = "";
 const screenContents = [];
 
 const display = document.getElementById('disp');
@@ -13,7 +13,9 @@ display.innerText = '0';
 
 function prepInput(input) {
   if (input === 'deci') {
-    let deci = 0;
+    if (calcInputs.includes('.')){
+      return;
+    }
     if (calcInputs.length > 0) {
       handleInput('.');
     } else {
