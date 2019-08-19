@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Load CSS -->
   <link rel="stylesheet" type="text/css" href="css/index.css" >
+  
   <title>Calculator</title>
 </head>
 <body>
   <div class="calc-container">
+    <!-- Table view for calculator display and keys -->
   <table>
+    <!-- Calculator display to fit the whole row -->
     <tr>
       <th colspan="4" id="disp" class="display"></th>
     </tr>
+
+    <!-- An extra row to give some spacing between display and keys -->
     <tr class="space"></tr>
+
+    <!-- Calculator keys -->
     <tr>
       <td id="clear" onclick="fullClear()">C</td>
     </tr>
@@ -44,6 +53,7 @@
   </table>
   </div>
 
+  <!-- Load JavaScript logic -->
   <script src="js/index.js"></script>
 </body>
 </html>
